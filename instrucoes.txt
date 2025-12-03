@@ -1,0 +1,42 @@
+%%writefile readme.txt
+# Projeto Final - Análise de Processos em Física de Partículas
+
+## Objetivo
+
+Cada grupo deve analisar um processo físico (sinal + background) usando diferentes formas de leitura e exploração dos dados LHE. A análise deve resultar em gráficos e conclusões sobre as características dos eventos.
+
+## Organização
+
+- Cada estudante deve usar uma abordagem diferente para leitura dos dados:
+  1. Leitura com biblioteca especializada (`pylhe`, `scikit-hep`, etc.)
+  2. Conversão para `pandas.DataFrame` e análise via filtros e gráficos
+  3. Leitura manual/parsing com Python puro (`open`, `split`, etc.)
+
+- Ao final, o grupo deve consolidar a análise em um notebook final (`analise_parte1.ipynb`), escolhendo as melhores abordagens e discutindo diferenças entre elas.
+
+## Entregas
+
+Haverão 2 entregas:
+
+1. **08/dez**: notebooks individuais de leitura e extração básica (`01`, `02`, `03`)
+2. **15/dez**: comparação sinal vs background com normalização
+
+**Adicional**: notebook com instruções para testes adicionais (sem entrega)
+
+## Instruções
+
+- Os dados (arquivos `.lhe`) estão no diretório `data/`.
+- Os notebooks devem estar na pasta `notebooks/`.
+- Os gráficos e imagens devem estar em `resultados/graficos/`.
+- Cada célula deve ter claramente o código explicando o que foi feito.
+
+## Avaliação
+
+O projeto será avaliado com base em:
+
+- Clareza e organização do repositório
+- Compreensão dos conceitos físicos envolvidos
+- Profundidade da análise (cortes, variáveis, justificativas)
+- Comparação entre abordagens
+- Participação equitativa dos membros do grupo
+

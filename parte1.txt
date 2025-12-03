@@ -1,0 +1,77 @@
+# Etapas da Análise com Arquivo LHE
+
+## [1] Leitura do Arquivo LHE
+
+Implemente a leitura do arquivo `.lhe` utilizando uma das formas abaixo:
+
+- `pylhe` – leitura especializada para eventos LHE.
+- `pandas` – se for convertido para tabular.
+- Leitura manual linha a linha (parsing com regex, etc).
+
+Exigências por tamanho do grupo:
+
+- Individual: entregar uma forma de leitura.
+- Dupla: entregar duas formas (dois notebooks).
+- Trio: entregar três notebooks, cada um com uma leitura diferente.
+
+---
+
+## [2a] Investigação Preliminar do Arquivo
+
+Objetivo: Exibir o número total de eventos da amostra com o método escolhido.
+
+Exemplo de código:
+```python
+print(f"Número total de eventos: {len(events)}")
+```
+
+---
+
+## [2b] Investigação Preliminar dos Eventos
+
+### Objetivo 1:
+Construir uma tabela das partículas presentes nos eventos, classificadas pelos seus status:
+
+- `status = -1`: partículas iniciais.
+- `status = 1`: partículas finais detectáveis.
+- `status = 2`: intermediárias (resonâncias como Z, W, H).
+
+### Objetivo 2:
+Com base nas partículas e seus status, identificar:
+
+- Qual é o processo de sinal?
+- Qual é o processo de fundo (background)?
+
+---
+
+## [3] Exploração do Conteúdo
+
+### Objetivo 1:
+Construir histogramas para as partículas de estado final (exceto neutrinos), com as variáveis cinemáticas:
+
+- Momento Transversal: `pT` de 0 a 100 GeV  
+- Pseudorapidez: `η` de -3 a +3  
+- Ângulo Azimutal: `φ` de -π a +π  
+
+Plotar sinal e fundo juntos no mesmo histograma para comparação.
+
+### Objetivo 2:
+Imprimir o número total de eventos representados em cada histograma.
+
+### Pergunta:
+Os histogramas representam todos os eventos do arquivo LHE?  
+Se não, explique o porquê (por exemplo: presença ou ausência de certas partículas nos eventos).
+
+---
+
+## [4] Filtros e Cortes Cinemáticos
+
+### Objetivo 1:
+Analisar se cortes cinemáticos simples ajudam a remover o fundo. Exemplos:
+
+- `pT > X` GeV
+- `|η| < Y`
+
+### Objetivo 2:
+Se for útil, aplique o corte e reconstrua os histogramas com a nova seleção.
+

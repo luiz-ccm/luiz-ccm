@@ -1,0 +1,35 @@
+# 📘 Formato LHE (Les Houches Event)
+
+O **formato LHE** é um padrão adotado na física de partículas para representar eventos simulados em colisões entre partículas. Ele é amplamente utilizado em ferramentas como **MadGraph5_aMC@NLO**, **Sherpa**, **Pythia**, entre outras.
+
+@article{Alwall:2006yp,
+    author = "Alwall, J. and others",
+    title = "{A Standard format for Les Houches event files}",
+    eprint = "hep-ph/0609017",
+    archivePrefix = "arXiv",
+    reportNumber = "FERMILAB-PUB-06-337-T, CERN-LCGAPP-2006-03",
+    doi = "10.1016/j.cpc.2006.11.010",
+    journal = "Comput. Phys. Commun.",
+    volume = "176",
+    pages = "300--304",
+    year = "2007"
+}
+
+---
+
+## O que é um arquivo LHE?
+
+Um arquivo `.lhe` (Les Houches Event) descreve **eventos partônicos** gerados por Monte Carlo — ou seja, antes da hadronização e simulação do detector.
+
+Ele é escrito no **formato XML**, contendo informações completas sobre o processo, os parâmetros de entrada e os eventos simulados.
+
+---
+
+## Estrutura do arquivo LHE
+
+O conteúdo típico de um arquivo `.lhe` inclui:
+
+- `<header>`: informações sobre o modelo usado, gerador, PDF, e comandos.
+- `<init>`: energia dos feixes, IDs das partículas iniciais, pesos, etc.
+- Múltiplos blocos `<event>`: cada evento descreve as partículas envolvidas.
+
