@@ -1,0 +1,25 @@
+# --- [5] CONSERVAÇÃO DE ENERGIA ---
+# Print na célula o valor da variável de Mandelstam "s" para cada 1+1000*i eventos, onde i=[0,9].
+# A definição da variável "s" foi dada na última aula em termos da energia e momentum das partículas presentes no evento.
+# Calcule "s" somente com partículas de status == 1 e sem neutrinos.
+
+# --- [6] RECONSTRUÇÃO DE VARIÁVEIS ---
+# Construa um ou mais histogramas de Massa Invariante entre pares de partículas:
+	1. Forme pares de partículas presentes no evento (ex: dois múons, dois fótons, dois jatos, etc) - um histograma para cada par.
+  2. Se o evento conter mais de duas partículas estáveis, construa o histograma de massa invariante de todas elas combinadas.
+  3. Histogramas 2D (mapa de calor) de massa invariante versus \eta para sinal e fundo separadamente.
+
+# --- [7] GRÁFICOS E VISUALIZAÇÃO ---
+
+  1. Plotar os histogramas (pT, eta, phi da parte #1 e massa invariante da parte #2) normalizados pela seção de choque e luminosidade.
+   a. A normalização será dada pelo "yield" apresentado na última aula.
+   b. Seção de choque (cross section) do processo é dada no arquivo LHE e Luminosidade integrada em 1 ano pode ser usada como 10/fb ou 10000/pb.
+
+  2. Os dados experimentais mostraram de forma única a presença de sinal e fundo, logo faça:
+   a. Distribuição de massa invariante normalizado e com os dois histogramas de sinal e fundo empilhados (stacked).
+   b. Esse tipo de histograma que é comparado com dados
+   c. Veja: https://cms.cern/sites/default/files/field/image/Higgs_mass_0.png
+
+# --- [8] COMENTÁRIOS ---
+# Faz sentido a proporção entre os histogramas normalizados com base na seção de choque presente nos arquivos LHE?
+# Você verifica alguma estrutura particular nas disitrubuições de massa invariante?
